@@ -1,4 +1,4 @@
-package sft.checker
+package sft.stlc
 
 import Syntax._
 

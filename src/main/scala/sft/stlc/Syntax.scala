@@ -1,4 +1,4 @@
-package sft.checker
+package sft.stlc
 
 /**
  * Created by zjh on 16/10/6.
