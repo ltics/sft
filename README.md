@@ -1,11 +1,1 @@
-## run
-
-```
-sbt "run-main hm.Core"
-```
-
-## test
-
-```
-sbt test
-```
+[![Build Status](https://travis-ci.org/zjhmale/sft.svg?branch=master)](https://travis-ci.org/zjhmale/sft)
