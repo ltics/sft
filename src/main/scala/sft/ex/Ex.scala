@@ -1,6 +1,6 @@
-package sft
+package sft.ex
 
-import sft.Syntax._
+import Syntax._
 
 /**
  * Created by zjh on 16/10/6.
@@ -33,8 +33,10 @@ object Ex {
         }
     }
 
-    val idExpr = Abs("x", Var("x")) // λx. x
-    val constExpr = Abs("y", Abs("x", Var("y"))) // λy. λx. y
+    // λx. x
+    val idExpr = Abs("x", Var("x"))
+    // λy. λx. y
+    val constExpr = Abs("y", Abs("x", Var("y")))
     // (λx. x x) (λx. x x)
     val fixpointExpr = {
         val selfExpr = Abs("x", App(Var("x"), Var("x")))
@@ -51,7 +53,8 @@ object Ex {
         }
     }
 
-    sealed trait EC // electrical circuits
+    sealed trait EC
+    // electrical circuits
     case class Resistor(resistance: Double) extends EC
     case class Series(ec1: EC, ec2: EC) extends EC
     case class Parallel(ec1: EC, ec2: EC) extends EC

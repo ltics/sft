@@ -1,7 +1,7 @@
 package sft
 
-import org.scalatest._
-import Ex._
+import org.scalatest.{Matchers, FlatSpec}
+import ex.Ex._
 
 /**
  * Created by zjh on 16/10/6.
